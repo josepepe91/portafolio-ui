@@ -1,7 +1,7 @@
 ---
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer.astro';
-import Nav from '../components/Nav.astro';
+import Navigation from '../components/Navigation.astro';
 import type { Project } from '../types';
 
 interface Props {
@@ -86,7 +86,7 @@ const { content } = Astro.props;
 		</style>
 	</head>
 	<body>
-		<Nav />
+		<Navigation />
 		<header style={`background-image:url(${content.img})`} class="hero">
 			<h1 class="title">{content.title}</h1>
 		</header>

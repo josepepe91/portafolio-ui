@@ -1,0 +1,54 @@
+---
+import Socials from "./Socials.astro";
+
+---
+
+<nav>
+	<a class="link" href="/">
+		<div class="monogram">JA</div>
+	</a>
+	<a class="link" href="/projects/"> Portfolio</a>
+	<a class="link" href="/about/"> About</a>
+	<div class="socials"><Socials/></div>
+</nav>
+<style>
+	nav {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+		padding: 1rem;
+	}
+
+	.link {
+		color: var(--t-subdue);
+		display: block;
+		text-decoration: none;
+		font-size: var(--f-d1);
+		text-transform: uppercase;
+		padding-top: 0.75em;
+		padding-bottom: 0.75em;
+	}
+
+	.link:hover,
+	.link:focus {
+		color: var(--t-active);
+	}
+
+	.monogram {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 2em;
+		height: 2em;
+		margin-right: 0.5rem;
+		color: var(--c-black);
+		font-weight: 900;
+		letter-spacing: -0.125rem;
+		border: 3px solid currentColor;
+		border-radius: 50%;
+	}
+
+	.socials {
+		margin-left: auto;
+	}
+</style>
