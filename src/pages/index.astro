@@ -10,6 +10,9 @@ import type { Project } from '../types';
 const projects = await Astro.glob<Project>('./project/**/*.md');
 const featuredProject = projects[0]!;
 
+// CSS vars
+const margin = '2em'
+
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
@@ -17,12 +20,12 @@ const featuredProject = projects[0]!;
 <html lang="en">
 	<head>
 		<MainHead
-			title="José Albarado: Personal Site"
+			title="José Albarado | Personal Site"
 			description="José Albarado: Developer, Speaker, and Writer..."
 		/>
-		<style>
+		<style define:vars={{margin}}>
 			.wrapper {
-				margin-top: 2em;
+				margin-top: var(--margin);
 				margin-bottom: 2em;
 			}
 
