@@ -1,17 +1,17 @@
 ---
 // Component Imports
-import MainHead from '../components/MainHead.astro';
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
-import PortfolioPreview from '../components/PortfolioPreview.astro';
-import type { Project } from '../types';
+import MainHead from "../components/MainHead.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import PortfolioPreview from "../components/PortfolioPreview.astro";
+import type { Project } from "../types";
 
 // Data Fetching: List all Markdown posts in the repo.
-const projects = await Astro.glob<Project>('./project/**/*.md');
+const projects = await Astro.glob<Project>("./project/**/*.md");
 const featuredProject = projects[0]!;
 
 // CSS vars
-const margin = '2em'
+const margin = "2em";
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -23,7 +23,7 @@ const margin = '2em'
 			title="José Albarado | Personal Site"
 			description="José Albarado: Developer, Speaker, and Writer..."
 		/>
-		<style define:vars={{margin}}>
+		<style define:vars={{ margin }}>
 			.wrapper {
 				margin-top: var(--margin);
 				margin-bottom: 2em;
@@ -48,7 +48,7 @@ const margin = '2em'
 
 			.gradient,
 			.gradient2 {
-				background-image: url('/assets/mesh-gradient.jpg');
+				background-image: url("/assets/mesh-gradient.jpg");
 				background-size: cover;
 				pointer-events: none;
 				mix-blend-mode: screen;
@@ -218,12 +218,19 @@ const margin = '2em'
 			<div class="gradient2"></div>
 			<div class="overlay">
 				<h1 class="title">
-					<small class="subtitle">The personal site of</small>José Albarado
+					<small class="subtitle">The personal site of</small>José
+					Albarado
 				</h1>
 				<div class="roles">
-					<span class="role">👩‍💻 Developer <span class="invert">👩‍💻 Developer</span></span>
-					<span class="role">🎤 Speaker <span class="invert">🎤 Speaker</span></span>
-					<span class="role">✏️ Writer <span class="invert">✏️ Writer</span></span>
+					<span class="role"
+						>👩‍💻 Developer <span class="invert">👩‍💻 Developer</span>
+					</span>
+					<span class="role"
+						>🎤 Speaker <span class="invert">🎤 Speaker</span>
+					</span>
+					<span class="role"
+						>✏️ Writer <span class="invert">✏️ Writer</span>
+					</span>
 				</div>
 				<p class="desc">Lover of dogs, roadtrips, and poetry.</p>
 			</div>
@@ -240,9 +247,16 @@ const margin = '2em'
 				<div class="section">
 					<h3 class="sectionTitle">About me</h3>
 					<p class="bio">
-						<span>Hello!</span> I’m José, and this is my website. It was made using{' '}
-						<a href="https://github.com/withastro/astro" target="_blank" rel="nofollow"> Astro</a>,
-						a new way to build static sites. This is just an example template for you to modify.
+						<span>Hello!</span> I’m José, and this is my website. It
+						was made using{" "}
+						<a
+							href="https://github.com/withastro/astro"
+							target="_blank"
+							rel="nofollow"
+						>
+							Astro</a
+						>, a new way to build static sites. This is just an
+						example template for you to modify.
 					</p>
 					<p>
 						<a href="/about">Read more</a>
@@ -251,5 +265,8 @@ const margin = '2em'
 			</div>
 		</main>
 		<Footer />
+		<script>
+			import "../scripts/menu.js";
+		</script>
 	</body>
 </html>
