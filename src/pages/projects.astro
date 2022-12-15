@@ -6,10 +6,10 @@ import PortfolioPreview from '../components/PortfolioPreview.astro';
 import type { Project } from '../types';
 
 const projects = (await Astro.glob<Project>('./project/**/*.md'))
-	.filter(({ frontmatter }) => !!frontmatter.publishDate)
+	.filter(({ frontmatter }) => !!frontmatter.pubDate)
 	.sort(
 		(a, b) =>
-			new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf()
+			new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
 	);
 ---
 

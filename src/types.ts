@@ -2,7 +2,7 @@ export interface Project {
 	title: string;
 	client: string;
 	description: string;
-	publishDate: string;
+	pubDate: string;
 	tags: string[];
 	img: string;
 }
