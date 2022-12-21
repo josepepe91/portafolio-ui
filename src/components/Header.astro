@@ -1,0 +1,18 @@
+---
+const { pageTitle } = Astro.props;
+---
+<header>
+    <div class="title">{pageTitle.toUpperCase()}</div>
+    <div class="vertical-line"></div>
+</header>
+<style>
+    header {
+        @apply p-10;
+    }
+    .title {
+        @apply text-teal-dark text-center font-extrabold text-8xl leading-[96px];
+    }
+    .vertical-line {
+        @apply w-0.5 h-8 bg-teal-dark mx-auto;
+    }
+</style>
