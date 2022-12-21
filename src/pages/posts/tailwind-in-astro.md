@@ -1,0 +1,5 @@
+---
+---
+- Install tailwind from the official astro pluggin
+- configure tailwind.config.cjs for customs theme properties
+- there are two ways to use tailwind classes use directly the class int html class property or create a custo class and extend the property

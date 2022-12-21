@@ -1,106 +1,55 @@
 ---
 import Hamburger from "./Hamburger.astro";
 import Socials from "./Socials.astro";
-import ThemeIcon from './ThemeIcon.astro';
 ---
 
 <nav>
     <a class="link" href="/">
-        <div class="monogram">JA</div>
+        <span class="material-symbols-rounded align-middle">home</span>
     </a>
     <div class="nav-links">
-        <a class="link" href="/projects/"> Portfolio</a>
-        <a class="link" href="/about/"> About</a>
-        <a class="link" href="/blog/"> Blog</a>
-        <a class="link" href="/tags/"> Tags</a>
+        <a href="/blog/">blog</a>
+        <a href="/about/">about</a>
+        <a href="/projects/">portfolio</a>
+        <a href="/tags/">tags</a>
+        <div class="socials"><Socials /></div>
     </div>
-    <div class="socials"><Socials /></div>
-    <ThemeIcon/>
     <Hamburger />
 </nav>
 <style>
     nav {
-        display: flex;
-        gap: 1rem;
-        align-items: center;
-        padding: 1rem;
+        @apply flex items-center m-4 gap-4 text-teal-dark;
+        @apply sm:m-8;
     }
 
-    .link {
-        color: var(--t-subdue);
-        display: block;
-        text-decoration: none;
-        font-size: var(--f-d1);
-        text-transform: uppercase;
-        padding-top: 0.75em;
-        padding-bottom: 0.75em;
+    nav > .link {
+        @apply rounded-full text-white bg-teal-dark p-1;
     }
 
-    .link:hover,
-    .link:focus {
-        color: var(--t-active);
-    }
-
-    .monogram {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 2em;
-        height: 2em;
-        margin-right: 0.5rem;
-        color: var(--c-black);
-        font-weight: 900;
-        letter-spacing: -0.125rem;
-        border: 3px solid currentColor;
-        border-radius: 50%;
+    nav > .link:hover {
+        @apply bg-black;
     }
 
     .socials {
-        margin-left: auto;
+        @apply mt-2;
+        @apply sm:ml-auto sm:mt-0;
     }
 
-    /* nav styles */
-
     .nav-links {
-        width: 100%;
-        top: 5rem;
-        left: 48px;
-        background-color: #ff9776;
-        display: none;
-        margin: 0;
+        @apply hidden m-0;
+        @apply sm:flex sm:flex-row sm:items-center sm:w-full sm:bg-none;
     }
 
     .nav-links a {
-        display: block;
-        text-align: center;
-        padding: 10px 0;
-        text-decoration: none;
-        font-size: 1.2rem;
-        font-weight: bold;
-        text-transform: uppercase;
+        @apply px-2 pt-1 font-bold;
     }
 
     .nav-links a:hover,
     a:focus {
-        background-color: #ff9776;
+        @apply bg-teal rounded;
     }
 
     .expanded {
-        display: unset;
-    }
-
-    @media screen and (min-width: 636px) {
-        .nav-links {
-            margin-left: 5em;
-            display: block;
-            position: static;
-            width: auto;
-            background: none;
-        }
-
-        .nav-links a {
-            display: inline-block;
-            padding: 15px 20px;
-        }
+        @apply flex flex-col items-center w-full;
     }
 </style>
