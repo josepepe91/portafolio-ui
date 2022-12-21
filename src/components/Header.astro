@@ -7,12 +7,15 @@ const { pageTitle } = Astro.props;
 </header>
 <style>
     header {
-        @apply p-10;
+        @apply py-5;
+        @apply sm:py-10;
     }
     .title {
-        @apply text-teal-dark text-center font-extrabold text-8xl leading-[96px];
+        @apply text-teal-dark text-center font-extrabold text-5xl;
+        @apply sm:text-8xl;
     }
     .vertical-line {
-        @apply w-0.5 h-8 bg-teal-dark mx-auto;
+        @apply w-0.5 h-4 bg-teal-dark mx-auto;
+        @apply sm:h-8;
     }
 </style>
