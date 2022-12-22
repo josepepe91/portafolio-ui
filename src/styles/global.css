@@ -1,6 +1,7 @@
 /* Global variables */
 
 body {
+	@apply text-teal-dark;
 	margin: 0;
 	font-family: 'Khula', sans-serif;
 }
@@ -29,6 +30,10 @@ a {
 
 h1 {
 	font-size: var(--f-u8);
+}
+
+h3 {
+	@apply text-lg font-semibold;
 }
 
 .button {

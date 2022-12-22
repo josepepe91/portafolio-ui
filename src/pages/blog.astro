@@ -2,12 +2,20 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
 import Header from "../components/Header.astro";
+import BlogPreview from "../components/BlogPreview.astro";
 const allPosts = await Astro.glob("../pages/posts/*.md");
 const pageTitle = "Blog";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <Header pageTitle={pageTitle} />
+
+  <BlogPreview title="Snow impacts education websites, it's crucial they're ready" date="28th march 2018">
+    When snow sweeps across the country, the online world for education
+    providers take a pretty big hit. It doesn’t seem obvious at first, why would
+    it?
+  </BlogPreview>
+
   <p>This is where I will post about my journey learning Astro.</p>
   <ul>
     {
