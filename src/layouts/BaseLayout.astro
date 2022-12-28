@@ -30,7 +30,7 @@ const { pageTitle } = Astro.props;
 		<style define:vars={{ margin }}>
 			.wrapper {
 				margin-top: var(--margin);
-				margin-bottom: 2em;
+				padding-bottom: 2.5rem;
 			}
 
 			.grid {
@@ -68,39 +68,16 @@ const { pageTitle } = Astro.props;
 				text-align: center;
 				margin-top: 2em;
 			}
+			.page-container {
+				position: relative;
+				min-height: 100vh;
+			}
 		</style>
 	</head>
 	<body>
 		<Navigation />
 		<main class="wrapper">
 			<slot />
-			<div class="grid">
-				<div class="section">
-					<h3 class="sectionTitle">Selected Work</h3>
-					<PortfolioPreview project={featuredProject} />
-					<div class="buttonContainer">
-						<a href="/projects/" class="button">View All</a>
-					</div>
-				</div>
-				<div class="section">
-					<h3 class="sectionTitle">About me</h3>
-					<p class="bio">
-						<span>Hello!</span> I’m José, and this is my website. It
-						was made using{" "}
-						<a
-							href="https://github.com/withastro/astro"
-							target="_blank"
-							rel="nofollow"
-						>
-							Astro</a
-						>, a new way to build static sites. This is just an
-						example template for you to modify.
-					</p>
-					<p>
-						<a href="/about">Read more</a>
-					</p>
-				</div>
-			</div>
 		</main>
 		<Footer />
 		<script>

@@ -2,8 +2,11 @@
 
 body {
 	@apply text-teal-dark;
-	margin: 0;
+	margin: 0 auto;
 	font-family: 'Khula', sans-serif;
+	max-width: 1024px;
+	position: relative;
+    min-height: 100vh;
 }
 
 .dark body {

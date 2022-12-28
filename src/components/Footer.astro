@@ -4,15 +4,18 @@ const currentYear = new Date().getFullYear();
 
 <footer>
 	&copy; {currentYear} José Albarado
-	<small class="byline">🚀 Built by Astro</small>
+	<small class="byline">🚀 Powered by Astro</small>
 </footer>
 <style>
 	footer {
+		position: absolute;
+		bottom: -8rem;
+		width: 100%;
+		height: 4rem;
 		text-align: center;
-		padding-top: 8rem;
-		padding-right: 2rem;
-		padding-bottom: 4rem;
-		padding-left: 2rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		max-width: 1024px;
 	}
 
 	.byline {
