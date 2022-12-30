@@ -1,8 +1,21 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Greeting from "../components/Greeting.jsx";
 import PostPreview from "../components/PostPreview.astro";
 import PostsGrid from "../components/PostsGrid.astro";
+import PortfolioPreview from "../components/PortfolioPreview.astro";
+const allProjects = await Astro.glob("../pages/project/**/*.md");
+const allPosts = await Astro.glob("../pages/posts/*.md");
+const latestPost = allPosts.sort((a, b) => {
+	return (
+		new Date(b.frontmatter.pubDate).getTime() -
+		new Date(a.frontmatter.pubDate).getTime()
+	);
+})[0];
+const dateOptions: object = {
+	year: "numeric",
+	month: "long",
+	day: "numeric",
+};
 const pageTitle = "Home Page";
 ---
 
@@ -22,12 +35,18 @@ const pageTitle = "Home Page";
 	<div class="my-10">
 		<PostPreview
 			category="latest post"
-			title="Snow impacts education websites, it's crucial they're ready"
-			date="25th Jan 2022"
+			title={latestPost.frontmatter.title}
+			date={latestPost.frontmatter.pubDate
+				? new Date(latestPost.frontmatter.pubDate).toLocaleDateString(
+						"en-US",
+						dateOptions
+				  )
+				: null}
 			type="title"
 		/>
 	</div>
-	<PostsGrid/>
+	<PostsGrid />
+	{allProjects.map(project=> <PortfolioPreview project={project}/>)}
 </BaseLayout>
 
 <style>
