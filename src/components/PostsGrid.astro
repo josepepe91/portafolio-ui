@@ -1,0 +1,38 @@
+---
+import PostPreview from "../components/PostPreview.astro";
+const allPosts = await Astro.glob("../pages/posts/*.md");
+const dateOptions: object = {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+};
+---
+<section class="posts-grid">
+    {
+      allPosts.map((post) => (
+        <a class="post-preview-container" href={post.url}>
+          <PostPreview
+            title={post.frontmatter.title}
+            date={
+              post.frontmatter.pubDate
+                ? new Date(post.frontmatter.pubDate).toLocaleDateString(
+                    "en-US",
+                    dateOptions
+                  )
+                : null
+            }
+            imgSrc={post.frontmatter.image?.url}
+          >
+            {post.frontmatter.description}
+          </PostPreview>
+        </a>
+      ))
+    }
+  </section>
+  <style>
+    .posts-grid {
+      @apply grid gap-5 gap-y-10;
+      @apply sm:grid-cols-2;
+      @apply md:grid-cols-3;
+    }
+  </style>

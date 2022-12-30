@@ -1,41 +1,58 @@
 ---
-const { title, date, imgSrc } = Astro.props;
-const imgUrl = `url(${imgSrc})`
+interface Props {
+  title: string;
+  date: string;
+  imgSrc?: string;
+  type?: "full" | "title";
+  category?: string;
+}
+const { title, date, imgSrc, type = "full", category } = Astro.props;
+const imgUrl = `url(${imgSrc})`;
 ---
-<article class="post-preview">
-    <div class="post-img">
-    </div>
-    <div class="post-content">
-      <h3 class="post-title">
-        {title}
-      </h3>
-      <p class="post-description">
-        <slot />
-      </p>
-    </div>
-    {date && <div class="post-date">
-      {date} <span class="material-symbols-rounded text-lg text-purple"> event</span>
-    </div>}
-  </article>
 
-  <style define:vars={{ imgUrl }}>
-    .post-preview {
-      @apply box-border w-full text-right cursor-pointer;
+<article class="post-preview">
+  {type === "full" && <div class="post-img" />}
+  {category && <div class="uppercase">{category}</div>}
+  <div class="post-content">
+    <h3 class="post-title">
+      {title}
+    </h3>
+    {
+      type === "full" && (
+        <p class="post-description">
+          <slot />
+        </p>
+      )
     }
-    .post-img {
-      @apply box-border w-full h-32 bg-teal-dark rounded-2xl rounded-bl-none bg-cover bg-center;
-      background-image: var(--imgUrl);
-    }
-    .post-content {
-      @apply mt-3 mb-1 pr-2 border-r-4 border-teal;
-    }
-    .post-title {
-      @apply pt-1;
-    }
-    .post-description {
-      @apply py-1;
-    }
-    .post-date {
-      @apply flex justify-end items-end gap-2 text-sm text-gray uppercase;
-    }
-  </style>
+  </div>
+  {
+    date && (
+      <div class="post-date">
+        {date}{" "}
+        <span class="material-symbols-rounded text-lg text-purple"> event</span>
+      </div>
+    )
+  }
+</article>
+
+<style define:vars={{ imgUrl }}>
+  .post-preview {
+    @apply box-border w-full text-right cursor-pointer;
+  }
+  .post-img {
+    @apply box-border w-full h-32 bg-teal-dark rounded-2xl rounded-bl-none bg-cover bg-center;
+    background-image: var(--imgUrl);
+  }
+  .post-content {
+    @apply mt-3 mb-1 pr-2 border-r-4 border-teal;
+  }
+  .post-title {
+    @apply pt-1;
+  }
+  .post-description {
+    @apply py-1;
+  }
+  .post-date {
+    @apply flex justify-end items-end gap-2 text-sm text-gray uppercase;
+  }
+</style>

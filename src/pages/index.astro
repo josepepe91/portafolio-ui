@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Greeting from "../components/Greeting.jsx";
+import PostPreview from "../components/PostPreview.astro";
+import PostsGrid from "../components/PostsGrid.astro";
 const pageTitle = "Home Page";
 ---
 
@@ -14,13 +16,18 @@ const pageTitle = "Home Page";
 	</section>
 	<h2>I'm José A Full Stack Web Developer,</h2>
 	<h3>
-		with a strong background in front-end and
-		collaborating with agile teams.
+		with a strong background in front-end and collaboration with agile
+		teams.
 	</h3>
-	<Greeting
-		client:visible
-		messages={["Hi", "Hola", "Hello", "Howdy", "Hey there"]}
-	/>
+	<div class="my-10">
+		<PostPreview
+			category="latest post"
+			title="Snow impacts education websites, it's crucial they're ready"
+			date="25th Jan 2022"
+			type="title"
+		/>
+	</div>
+	<PostsGrid/>
 </BaseLayout>
 
 <style>
@@ -31,7 +38,8 @@ const pageTitle = "Home Page";
 	.mixed-title {
 		@apply mt-14 mb-7;
 	}
-	h2, h3 {
+	h2,
+	h3 {
 		@apply text-right;
 	}
 </style>
