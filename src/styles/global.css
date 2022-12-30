@@ -3,7 +3,7 @@
 body {
 	@apply text-teal-dark;
 	margin: 0 auto;
-	font-family: 'Khula', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	max-width: 1024px;
 	position: relative;
     min-height: 100vh;
@@ -33,6 +33,10 @@ a {
 
 h1 {
 	font-size: var(--f-u8);
+}
+
+h2 {
+	@apply text-xl font-semibold;
 }
 
 h3 {

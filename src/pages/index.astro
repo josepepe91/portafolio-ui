@@ -1,10 +1,37 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro"
-import Greeting from '../components/Greeting.jsx'
-const pageTitle = "Home Page"
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Greeting from "../components/Greeting.jsx";
+const pageTitle = "Home Page";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<p class="desc">Lover of dogs, roadtrips, and poetry.</p>
-	<Greeting client:visible messages={['Hi', 'Hola', 'Hello', 'Howdy', 'Hey there']}/>
+	<section class="mixed-title">
+		<div class="feature text-teal">analyze</div>
+		<div class="feature text-yellow">design</div>
+		<div class="feature text-purple">develop & build</div>
+		<div class="feature text-red">launch</div>
+		<div class="feature">test & learn</div>
+	</section>
+	<h2>I'm José A Full Stack Web Developer,</h2>
+	<h3>
+		with a strong background in front-end and
+		collaborating with agile teams.
+	</h3>
+	<Greeting
+		client:visible
+		messages={["Hi", "Hola", "Hello", "Howdy", "Hey there"]}
+	/>
 </BaseLayout>
+
+<style>
+	.feature {
+		@apply text-5xl leading-[28px] font-extrabold text-center tracking-[-6px] uppercase mix-blend-multiply;
+		@apply md:text-8xl md:leading-[52px] md:font-extrabold md:text-center md:tracking-[-12px] md:uppercase md:mix-blend-multiply;
+	}
+	.mixed-title {
+		@apply mt-14 mb-7;
+	}
+	h2, h3 {
+		@apply text-right;
+	}
+</style>
