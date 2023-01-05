@@ -1,40 +1,54 @@
 ---
+import { MarkdownInstance } from "astro";
+import { Post } from "../types";
+
 interface Props {
-  title: string;
-  date: string;
-  imgSrc?: string;
+  post: MarkdownInstance<Post>;
   type?: "full" | "title";
-  category?: string;
+  header?: string;
 }
-const { title, date, imgSrc, type = "full", category } = Astro.props;
-const imgUrl = `url(${imgSrc})`;
+const { type = "full", category, post } = Astro.props;
+const { frontmatter, url } = post;
+const imgUrl = `url(${frontmatter.image?.url})`;
+const dateOptions: object = {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+};
+const date = frontmatter.pubDate
+  ? new Date(frontmatter.pubDate).toLocaleDateString("en-US", dateOptions)
+  : null;
 ---
 
 <article class="post-preview">
-  {type === "full" && <div class="post-img" />}
-  {category && <div class="uppercase">{category}</div>}
-  <div class="post-content">
-    <h3 class="post-title">
-      {title}
-    </h3>
+  <a href={url}>
+    {type === "full" && <div class="post-img" />}
+    {category && <div class="uppercase">{category}</div>}
+    <div class="post-content">
+      <h3 class="post-title">
+        {frontmatter.title}
+      </h3>
+      {
+        type === "full" && (
+          <p class="post-description">
+            <slot />
+          </p>
+        )
+      }
+    </div>
     {
-      type === "full" && (
-        <p class="post-description">
-          <slot />
-        </p>
+      date && (
+        <div class="post-date">
+          {date}{" "}
+          <span class="material-symbols-rounded text-lg text-purple">
+            {" "}
+            event
+          </span>
+        </div>
       )
     }
-  </div>
-  {
-    date && (
-      <div class="post-date">
-        {date}{" "}
-        <span class="material-symbols-rounded text-lg text-purple"> event</span>
-      </div>
-    )
-  }
+  </a>
 </article>
-
 <style define:vars={{ imgUrl }}>
   .post-preview {
     @apply box-border w-full text-right cursor-pointer;

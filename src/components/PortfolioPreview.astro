@@ -35,6 +35,7 @@ const imgUrl = `url(${frontmatter.img})`;
 <style define:vars={{ imgUrl }}>
 	.project-preview {
 		@apply box-border w-full text-right cursor-pointer;
+		@apply md:first:col-span-2;
 	}
 	.project-img {
 		@apply relative box-border w-full h-52 bg-teal-dark rounded-2xl rounded-bl-none bg-cover bg-center;
