@@ -23,11 +23,9 @@ const pageTitle = "Home Page";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
+	<div class="h-10 md:h-20 section-separator"></div>
 	<section class="mixed-title">
-		<div class="feature text-teal">analyze</div>
-		<div class="feature text-yellow">design</div>
-		<div class="feature text-purple">develop & build</div>
-		<div class="feature text-red">launch</div>
+		<div class="feature text-purple">develop</div>
 		<div class="feature">test & learn</div>
 	</section>
 	<h2>I'm José A Full Stack Web Developer,</h2>
@@ -35,27 +33,28 @@ const pageTitle = "Home Page";
 		with a strong background in front-end and collaboration with agile
 		teams.
 	</h3>
-	<div class="my-10">
+	<div class="mt-10 mb-7 md:mb-14 w-60 mx-auto sm:w-80">
 		<PostPreview header="latest post" post={latestPost} type="title" />
 	</div>
 	<ProjectsGrid />
-	<div class="posts-container"></div>
+	<div class="my-10 h-7 section-separator"></div>
 	<PostsGrid />
+	<div class="mt-10 h-7 section-separator"></div>
 </BaseLayout>
 
 <style>
-	.posts-container {
-		@apply mt-4;
-	}
 	.feature {
 		@apply text-5xl leading-[28px] font-extrabold text-center tracking-[-6px] uppercase mix-blend-multiply;
-		@apply md:text-8xl md:leading-[52px] md:font-extrabold md:text-center md:tracking-[-12px] md:uppercase md:mix-blend-multiply;
+		@apply md:text-8xl md:leading-[60px] md:font-extrabold md:text-center md:tracking-[-12px] md:uppercase md:mix-blend-multiply;
 	}
 	.mixed-title {
-		@apply mt-14 mb-7;
+		@apply mt-8 mb-7 md:mt-14;
 	}
 	h2,
 	h3 {
-		@apply text-right;
+		@apply text-center;
+	}
+	.section-separator {
+		@apply w-[2px] bg-teal-dark mx-auto;
 	}
 </style>

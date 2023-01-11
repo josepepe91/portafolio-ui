@@ -7,7 +7,7 @@ interface Props {
   type?: "full" | "title";
   header?: string;
 }
-const { type = "full", category, post } = Astro.props;
+const { type = "full", header, post } = Astro.props;
 const { frontmatter, url } = post;
 const imgUrl = `url(${frontmatter.image?.url})`;
 const dateOptions: object = {
@@ -23,7 +23,7 @@ const date = frontmatter.pubDate
 <article class="post-preview">
   <a href={url}>
     {type === "full" && <div class="post-img" />}
-    {category && <div class="uppercase">{category}</div>}
+    {header && <div class="uppercase">{header}</div>}
     <div class="post-content">
       <h3 class="post-title">
         {frontmatter.title}
@@ -51,7 +51,7 @@ const date = frontmatter.pubDate
 </article>
 <style define:vars={{ imgUrl }}>
   .post-preview {
-    @apply box-border w-full text-right cursor-pointer;
+    @apply box-border text-right cursor-pointer;
   }
   .post-img {
     @apply box-border w-full h-32 bg-teal-dark rounded-2xl rounded-bl-none bg-cover bg-center;
