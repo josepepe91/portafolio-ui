@@ -1,12 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import PostPreview from "../components/PostPreview.astro";
-import PostsGrid from "../components/PostsGrid.astro";
-import ProjectsGrid from "../components/ProjectsGrid.astro";
 import { MarkdownInstance } from "astro";
 import { Post } from "../types";
+import PostPreview from "../components/molecules/PostPreview.astro";
+import ProjectsGrid from "../components/domain/portafolio/ProjectsGrid.astro";
+import PostsGrid from "../components/domain/blog/PostsGrid.astro";
 const allPosts: MarkdownInstance<Post>[] = await Astro.glob(
-	"../pages/posts/*.md"
+	"./posts/*.md"
 );
 const latestPost = allPosts.sort((a, b) => {
 	return (

@@ -1,8 +1,8 @@
 ---
 import { MarkdownInstance } from "astro";
-import PostPreview from "../components/PostPreview.astro";
-import { Post } from "../types";
-const allPosts: MarkdownInstance<Post>[] = await Astro.glob("../pages/posts/*.md");
+import { Post } from "../../../types";
+import PostPreview from "../../molecules/PostPreview.astro";
+const allPosts: MarkdownInstance<Post>[] = await Astro.glob("../../../pages/posts/*.md");
 ---
 <section class="posts-grid">
     {

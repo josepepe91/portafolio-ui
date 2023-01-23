@@ -1,8 +1,8 @@
 ---
 import { MarkdownInstance } from "astro";
-import { Project } from "../types";
-import PortfolioPreview from "./PortfolioPreview.astro";
-const allProjects: MarkdownInstance<Project>[] = await Astro.glob("../pages/project/**/*.md");
+import { Project } from "../../../types";
+import PortfolioPreview from "../../molecules/PortfolioPreview.astro";
+const allProjects: MarkdownInstance<Project>[] = await Astro.glob("../../../pages/project/**/*.md");
 ---
 <section class="projects-grid">
     {
