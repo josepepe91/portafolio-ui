@@ -1,11 +1,11 @@
 ---
 import Header from "../components/atoms/Header.astro";
-import ProjectsGrid from "../components/domain/portafolio/ProjectsGrid.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-const pageTitle= 'Portafolio'
+const pageTitle = "About";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<Header pageTitle={pageTitle} />
-	<ProjectsGrid />
+  <Header pageTitle={pageTitle} />
+  <slot/>
 </BaseLayout>
+

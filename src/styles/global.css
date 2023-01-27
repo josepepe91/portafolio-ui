@@ -29,16 +29,12 @@ img {
 	height: auto;
 }
 
-a {
-	color: var(--t-active);
-}
-
 h1 {
-	font-size: var(--f-u8);
+	@apply text-2xl;
 }
 
 h2 {
-	@apply text-xl font-semibold;
+	@apply text-xl font-bold;
 }
 
 h3 {
