@@ -14,7 +14,7 @@ tags: ["astro", "blogging", "learning in public"]
 ![Image](/assets/images/me.jpeg 'avatar') My name is José Albarado, I am a full-stack web developer with more than 8 years of experience in many industries such as finance and retail. I am specialist in web technologies in particular in front-end tools. I also have experience leading and collaborating with agile and multidisciplinary teams.
 
 ## Contact
-
+---
 - [![Image](/assets/images/icons/gmail.png) jalbarado741@gmail.com](mailto:jalbarado741@gmail.com)
 - [![Image](/assets/images/icons/linkedin.png) josealbarado](https://www.linkedin.com/in/josealbarado/)
 - [![Image](/assets/images/icons/ring-phone.png) +593 995 146 703](tel:+593995146703)
@@ -71,59 +71,9 @@ tags: ["astro", "blogging", "learning in public"]
 
 ## Certificates
 ---
-- Scrum Foundation Professional Certificate (SFPC) - CertiProfCertiProf | `Mar 2022`
+- Scrum Foundation Professional Certificate (SFPC) - CertiProf | `Mar 2022`
 
 ## Awards
 ---
 - INNOVA Social Innovation - LinQ and ConQuito | `Nov 2015` | [Bus route application](https://conquito.org.ec/mi-bus-uio-una-alternativa-emprendedora-que-promueve-el-uso-del-transporte-publico/)
 - Ecuador Global Nominee - Buen Trip Hub and Space Apps Challenge | `April 2015` | [Scan tool for the agroindustry](https://2015.spaceappschallenge.org/project/dropi-alone/)
-
-<style>
-    h2 {
-        margin-top: 15px;
-    }
-    hr {
-        border: #EFEFEF solid;
-        border-width: 0 0 1px;
-        margin-bottom: 10px
-    }
-    h3 { 
-        line-height: 1;
-        margin: 10px 0 5px;
-    }
-    h3 img {
-        width: 25px;
-        height: 25px;
-        margin: 0 10px 0 0;
-        display: inline;
-        padding-bottom: 8px
-    }
-    li {
-        list-style: circle;
-        margin-left: 20px;
-    }
-    code {
-        font-size: inherit;
-        font-weight: initial;
-        border: 1px solid #EFEFEF;
-        padding: 0 5px;
-        border-radius: 5px;
-        background: #9ca3af17;
-    }
-    li img {
-        width: 25px;
-        height: 25px;
-        margin: 0 5px 0 0;
-        display: inline;
-        padding-bottom: 5px
-    }
-    a {
-        line-break: anywhere;
-    }
-    img[title="avatar"]{
-        border-radius:50%;
-        width:80px;
-        float:left;
-        margin-right: 10px;
-    }
-</style>

@@ -1,24 +1,41 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 const { frontmatter } = Astro.props;
+import MarkDownStyles from '../styles/md.css'
+const dateOptions: object = {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+};
+const date = frontmatter.pubDate
+  ? new Date(frontmatter.pubDate).toLocaleDateString("es-EC", dateOptions)
+  : null;
 --- 
 <BaseLayout pageTitle={frontmatter.title}>
-  <p><em>{frontmatter.description}</em></p>
-  <p>{frontmatter.pubDate.slice(0,10)}</p>
-
-  <p>Written by: {frontmatter.author}</p>
-
-  <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} /> 
-
+  <h1>{frontmatter.title}</h1>
+  <p class="author">{frontmatter.author} - {date}</p>
   <div class="tags">
     {frontmatter.tags.map((tag) => (
-      <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
+      <p class="tag"><a href={`/tags/${tag}`}>#{tag}</a></p>
     ))}
   </div>
-
-  <slot />
+  <p class="description"><em>{frontmatter.description}</em></p>
+  <img src={frontmatter.image.url} alt={frontmatter.image.alt} /> 
+  <div class="text-blog">
+    <slot/>
+  </div>
 </BaseLayout>
 <style>
+  h1{
+    font-size: 40px;
+    line-height: 1.5;
+  }
+  .text-blog {
+    font-size: 19px;
+  }
+  .description {
+    margin: 10px 0 20px;
+  }
   a {
     color: #00539F;
   }
@@ -31,10 +48,12 @@ const { frontmatter } = Astro.props;
 
   .tag {
     margin: 0.25em;
-    border: dotted 1px #a1a1a1;
-    border-radius: .5em;
-    padding: .5em 1em;
-    font-size: 1.15em;
-    background-color: #F8FCFD;
+    padding: .3em 0;
+    font-size: 12px;
+  }
+
+  .author {
+    font-size: 12px;
   }
 </style>
+<style is:inline set:html={MarkDownStyles}></style>

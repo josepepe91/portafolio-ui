@@ -1,0 +1,52 @@
+h2 {
+    font-size: 28px;
+    line-height: 2;
+    margin-top: 15px;
+}
+hr {
+    border: #EFEFEF solid;
+    border-width: 0 0 1px;
+    margin-bottom: 10px
+}
+h3 { 
+
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 10px 0 5px;
+    line-break: auto;
+}
+h3 img {
+    width: 25px;
+    height: 25px;
+    margin: 0 10px 0 0;
+    display: inline;
+    padding-bottom: 8px
+}
+li {
+    list-style: circle;
+    margin-left: 20px;
+}
+code {
+    font-size: inherit;
+    font-weight: initial;
+    border: 1px solid #EFEFEF;
+    padding: 0 5px;
+    border-radius: 5px;
+    background: #9ca3af17;
+}
+li img {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px 0 0;
+    display: inline;
+    padding-bottom: 5px
+}
+a {
+    line-break: anywhere;
+}
+img[title="avatar"]{
+    border-radius:50%;
+    width:80px;
+    float:left;
+    margin-right: 10px;
+}

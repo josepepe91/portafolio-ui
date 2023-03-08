@@ -5,9 +5,7 @@ import { Post } from "../types";
 import PostPreview from "../components/molecules/PostPreview.astro";
 import ProjectsGrid from "../components/domain/portafolio/ProjectsGrid.astro";
 import PostsGrid from "../components/domain/blog/PostsGrid.astro";
-const allPosts: MarkdownInstance<Post>[] = await Astro.glob(
-	"./posts/*.md"
-);
+const allPosts: MarkdownInstance<Post>[] = await Astro.glob("./posts/*.md");
 const latestPost = allPosts.sort((a, b) => {
 	return (
 		new Date(b.frontmatter.pubDate).getTime() -
@@ -25,14 +23,20 @@ const pageTitle = "Home Page";
 <BaseLayout pageTitle={pageTitle}>
 	<div class="h-10 md:h-20 section-separator"></div>
 	<section class="mixed-title">
-		<div class="feature text-purple">develop</div>
-		<div class="feature">test & learn</div>
+		<div class="feature text-orange">test</div>
+		<div class="feature text-green">learn</div>
+		<div class="feature">develop</div>
 	</section>
-	<h2>I'm José A Full Stack Web Developer,</h2>
-	<h3>
-		with a strong background in front-end and collaboration with agile
-		teams.
-	</h3>
+	<a class="cursor-pointer" href="/about">
+		<img src="/assets/images/me.jpeg" class="avatar" />
+		<div>
+			<h2>I'm José A Full Stack Web Developer,</h2>
+			<h3>
+				with a strong background in front-end and collaboration with
+				agile teams.
+			</h3>
+		</div>
+	</a>
 	<div class="mt-10 mb-7 md:mb-14 w-60 mx-auto sm:w-80">
 		<PostPreview header="latest post" post={latestPost} type="title" />
 	</div>
@@ -56,5 +60,11 @@ const pageTitle = "Home Page";
 	}
 	.section-separator {
 		@apply w-[2px] bg-teal-dark mx-auto;
+	}
+	.avatar {
+		margin: auto;
+		margin-bottom: 10px;
+		width: 80px;
+		border-radius: 50%;
 	}
 </style>

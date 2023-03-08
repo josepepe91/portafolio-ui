@@ -2,6 +2,7 @@
 import Header from "../components/atoms/Header.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "About";
+import MarkDownStyles from '../styles/md.css'
 ---
 
 <BaseLayout pageTitle={pageTitle}>
@@ -9,3 +10,4 @@ const pageTitle = "About";
   <slot/>
 </BaseLayout>
 
+<style is:inline set:html={MarkDownStyles}></style>
