@@ -3,7 +3,7 @@
 import Footer from "../components/atoms/Footer.astro";
 import Navigation from "../components/molecules/Navigation.astro";
 import MainHead from "../core/MainHead.astro";
-import { Project } from "../types";
+import type { Project } from "../types";
 
 // Data Fetching: List all Markdown posts in the repo.
 const projects = await Astro.glob<Project>("../pages/project/**/*.md");

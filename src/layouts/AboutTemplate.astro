@@ -2,12 +2,10 @@
 import Header from "../components/atoms/Header.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "About";
-import MarkDownStyles from "../styles/md.css";
+import "../styles/md.css";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <Header pageTitle={pageTitle} />
   <div class="md"><slot /></div>
 </BaseLayout>
-
-<style is:global set:html={MarkDownStyles}></style>
