@@ -19,14 +19,21 @@
 .md h3 img {
     width: 25px;
     height: 25px;
-    margin: 0 10px 0 0;
+    margin: 0 10px 5px 0;
     display: inline;
-    padding-bottom: 8px;
+}
+
+.md img {
+    margin: 20px auto;
 }
 
 .md li {
     list-style: circle;
     margin-left: 20px;
+}
+
+.md ul, p {
+    margin: 10px 0 0;
 }
 
 .md code {
@@ -54,5 +61,5 @@
     border-radius: 50%;
     width: 80px;
     float: left;
-    margin-right: 10px;
+    margin: 0 10px 0 0;
 }

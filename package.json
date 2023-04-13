@@ -1,8 +1,7 @@
 {
-  "name": "@example/portfolio",
+  "name": "portfolio",
   "type": "module",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -11,11 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/preact": "^1.2.0",
-    "@astrojs/rss": "^1.1.0",
-    "@astrojs/tailwind": "^2.1.3",
-    "astro": "^1.6.10",
-    "preact": "^10.11.3",
-    "tailwindcss": "^3.2.4"
+    "@astrojs/preact": "^2.1.0",
+    "@astrojs/rss": "^2.3.2",
+    "@astrojs/tailwind": "^3.1.1",
+    "astro": "^2.2.3",
+    "preact": "^10.13.2",
+    "tailwindcss": "^3.3.1"
   }
 }

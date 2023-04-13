@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 const { frontmatter } = Astro.props;
-import MarkDownStyles from "../styles/md.css";
+import  "../styles/md.css";
 const dateOptions: object = {
   year: "numeric",
   month: "long",
@@ -14,10 +14,10 @@ const date = frontmatter.pubDate
 
 <BaseLayout pageTitle={frontmatter.title}>
   <h1>{frontmatter.title}</h1>
-  <p class="author">{frontmatter.author} - {date}</p>
+  <p class="author">{frontmatter.author} -     {date}</p>
   <div class="tags">
     {
-      frontmatter.tags.map((tag) => (
+      frontmatter.tags.map((tag: string) => (
         <p class="tag">
           <a href={`/tags/${tag}`}>#{tag}</a>
         </p>
@@ -56,4 +56,3 @@ const date = frontmatter.pubDate
     @apply text-sm;
   }
 </style>
-<style is:inline set:html="MarkDownStyles"></style>
