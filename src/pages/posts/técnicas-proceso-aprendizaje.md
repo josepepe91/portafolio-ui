@@ -11,6 +11,7 @@ tags: ["pomodoro","feynman", "cornell"]
 ---
 
 ## Repasa
+---
 
 ¿Te ha pasado que al intentar aprender algo nuevo a los pocos días no recuerdas nada o recuerdas muy poco acerca de tema? La razón es que existe el 90% de probabilidad de olvidar lo estudiado. Repasar el tema varias veces te ayudará a disminuir este porcentaje.
 
@@ -21,6 +22,7 @@ tags: ["pomodoro","feynman", "cornell"]
 La forma en la que aprendemos se puede mejorar con la aplicación de ciertas técnicas. A continuación te presento algunas que mejorarán tu retención de conocimiento.
 
 ## Enfócate
+---
 
 ¡No! El multitasking no funciona, **enfócate en una sola tarea a la vez**, la terminaras mas pronto y será más provechoso. Elimina cualquier distracción, de preferencia ten un espacio exclusivo para estudiar.
 
@@ -36,6 +38,7 @@ La Técnica Pomodoro consiste en 4 sencillos pasos:
 ![No hay texto alternativo para esta imagen](https://media.licdn.com/dms/image/C4E12AQHE2FSGAjFZ_g/article-inline_image-shrink_1000_1488/0/1584923342699?e=1683158400&v=beta&t=GNEKQFGb1MZs7T4rSa2c2tf2VUaa2vk2SaWmaegip-8)Para llevar a cabo estos pasos ayúdate de una aplicación (yo uso Pomodoro Timer), también te sirve el temporizador del celular o un temporizador de cocina. Lo importante es cumplir los pasos, enfócate y no te saltes los descansos.
 
 ## Toma Apuntes (a mano)
+---
 
 **Escribir, sintetizar, esquematizar, subrayar y dibujar** implican el uso de nuestra capacidad visual, motora y cognitiva. Esto produce una actividad neural más alta, esto se ve traducido en una mayor retención del conocimiento y a su vez en un incremento de nuestra inteligencia.
 
@@ -54,6 +57,7 @@ Para empezar a tomar apuntes como Notas de Cornell, debemos esquematizar nuestra
 ![No hay texto alternativo para esta imagen](https://media.licdn.com/dms/image/C4E12AQEEWapbltozSg/article-inline_image-shrink_1000_1488/0/1584923436992?e=1683158400&v=beta&t=Nt81NELioibi6KSYWhUEVYivSVHeWZ0GWb3P4c3GDmM)Nota: Debes procurar usar solamente el espacio descrito, sin embargo si te hace falta algún apunte puedes usar notas adhesivas.
 
 ## Aprende en grupo, entiende y enseña
+---
 
 El aprendizaje grupal te da la oportunidad de aprender de otros, aumentar tus habilidades interpersonales, exponer tus dudas y compartir tu conocimiento. Recuerda que **entre mas hablas acerca de un tema más lo aprendes** y mucho mejor si lo entiendes y explicas.
 
@@ -67,6 +71,7 @@ La mejor forma de saber si entendiste algún tema es intentar explicarlo, para e
 > “Solo puedes explicar algo cuando lo comprendes profundamente.” *Richard Feynman.*
 
 ## Hábitos para un aprendizaje efectivo
+---
 
 - **Recapitula** todas las noches lo que aprendiste durante el día.
 - La práctica de **deportes** genera más oxigenación al cerebro.
@@ -83,6 +88,7 @@ Espero que estos hábitos y técnicas te sean de utilidad en tu proceso de apren
 ¡Hasta la próxima!
 
 ## Fuentes
+---
 
 https://platzi.com/clases/aprender/
 

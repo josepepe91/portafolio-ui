@@ -15,9 +15,8 @@ tags: ["astro", "blogging", "learning in public"]
 
 ## Contact
 ---
-- [![Image](/assets/images/icons/gmail.png) jalbarado741@gmail.com](mailto:jalbarado741@gmail.com)
-- [![Image](/assets/images/icons/linkedin.png) josealbarado](https://www.linkedin.com/in/josealbarado/)
-- [![Image](/assets/images/icons/ring-phone.png) +593 995 146 703](tel:+593995146703)
+- [![Image](/assets/images/icons/gmail.png)jalbarado741@gmail.com](mailto:jalbarado741@gmail.com)
+- [![Image](/assets/images/icons/linkedin.png)josealbarado](https://www.linkedin.com/in/josealbarado/)
 
 ## Experience
 ---

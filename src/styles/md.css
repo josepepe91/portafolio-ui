@@ -1,9 +1,16 @@
+.md h1 {
+    font-size: 40px;
+    line-height: 1.5;
+}
+
 .md h2 {
     font-size: 28px;
     line-height: 2;
     margin-top: 15px;
-  }
-.md hr {
+}
+
+.md h1+hr,
+h2+hr {
     border: #efefef solid;
     border-width: 0 0 1px;
     margin-bottom: 10px;
@@ -32,7 +39,8 @@
     margin-left: 20px;
 }
 
-.md ul, p {
+.md ul,
+p {
     margin: 16px 0 0;
 }
 
@@ -79,4 +87,52 @@
 
 .md .line span {
     color: rgba(41, 41, 41, 1) !important;
+}
+
+.md a {
+    text-decoration: underline;
+}
+
+.md a::after {
+    content: "🔗";
+    display: inline-block;
+    opacity: 0.7;
+    transition: opacity 0.2s ease-in-out;
+    margin-left: 0.2rem;
+    font-size: 60%;
+    vertical-align: top;
+}
+
+.md a:hover::after {
+    opacity: 1;
+}
+
+.md a:hover {
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+}
+
+.md table {
+    line-height: 1.5;
+    background-color: #fff;
+    overflow: auto;
+}
+
+.md table th {
+    font-weight: 600;
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;
+}
+
+.md table td {
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;
+}
+
+.md tr:nth-child(even) {
+    background-color: #f6f9fa;
+}
+
+/* styles for odd rows */
+.md tr:nth-child(odd) {
+    background-color: #fff;
 }

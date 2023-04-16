@@ -1,8 +1,9 @@
 ---
-import Footer from '../components/atoms/Footer.astro';
-import Navigation from '../components/molecules/Navigation.astro';
-import MainHead from '../core/MainHead.astro';
-import type { Project } from '../types';
+import Footer from "../components/atoms/Footer.astro";
+import Navigation from "../components/molecules/Navigation.astro";
+import MainHead from "../core/MainHead.astro";
+import type { Project } from "../types";
+import "../styles/md.css";
 
 interface Props {
 	content: Project;
@@ -18,7 +19,6 @@ const { content } = Astro.props;
 			.hero {
 				padding: 8rem;
 				display: flex;
-				background-color: var(--t-fg);
 				background-repeat: no-repeat;
 				background-size: cover;
 				min-height: 25vw;
@@ -28,60 +28,46 @@ const { content } = Astro.props;
 				justify-content: center;
 			}
 
-			.tag {
-				margin-left: 0.5em;
-				margin-right: 0.5em;
-				text-transform: uppercase;
-			}
-
-			.tag:nth-of-type(1n) {
-				color: var(--c-green);
-			}
-			.tag:nth-of-type(2n) {
-				color: var(--c-orange);
-			}
-			.tag:nth-of-type(3n) {
-				color: var(--c-blue);
-			}
-			.tag:nth-of-type(4n) {
-				color: var(--c-pink);
-			}
-
 			.title {
-				font-size: var(--f-u10);
 				font-weight: 900;
 				text-transform: uppercase;
 				letter-spacing: 0.0625em;
-			}
-
-			.leadIn {
-				padding-top: 4em;
-				color: var(--t-bg);
-				background-color: var(--t-fg);
-				text-align: center;
+				background: #00000080;
+				font-size: 20px;
+				padding: 10px 20px;
+				border-radius: 20px;
 			}
 
 			.tagline {
 				font-weight: 300;
-				font-size: var(--f-u3);
 				line-height: 1.5;
 			}
 
 			.content {
-				font-size: var(--f-u1);
 				line-height: 2.2;
 				max-width: 50em;
 				margin: auto;
 			}
 
 			.wrapper {
-				padding-bottom: 4em;
-				margin-bottom: 4em;
+				margin: 2rem 0;
 			}
 
 			footer {
 				text-align: center;
 				margin-top: 3rem;
+			}
+
+			a {
+				@apply text-blue;
+			}
+
+			.tags {
+				@apply flex flex-wrap my-2 mx-auto justify-center;
+			}
+
+			.tag {
+				@apply my-1 mr-2 py-1 text-sm;
 			}
 		</style>
 	</head>
@@ -90,17 +76,21 @@ const { content } = Astro.props;
 		<header style={`background-image:url(${content.img})`} class="hero">
 			<h1 class="title">{content.title}</h1>
 		</header>
-		<div class="leadIn">
-			<div class="wrapper">
-				{content.tags.map((t) => <span class="tag">{t}</span>)}
-				<h3 class="tagline">{content.description}</h3>
-			</div>
+		<div class="tags">
+			{
+				content.tags.map((tag: string) => (
+					<p class="tag">
+						<a href={`/tags/${tag}`}>#{tag}</a>
+					</p>
+				))
+			}
 		</div>
+		<h3 class="tagline text-center">{content.description}</h3>
 		<div class="wrapper">
-			<div class="content"><slot /></div>
+			<div class="content md"><slot /></div>
 		</div>
 		<footer>
-			<a href="/projects" class="button">View More</a>
+			<a href="/projects" class="button">More Projects</a>
 		</footer>
 		<Footer />
 	</body>
