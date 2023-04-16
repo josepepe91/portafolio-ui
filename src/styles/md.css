@@ -33,16 +33,29 @@
 }
 
 .md ul, p {
-    margin: 10px 0 0;
+    margin: 16px 0 0;
 }
 
 .md code {
+    background: rgb(242, 242, 242) !important;
+    color: rgba(41, 41, 41, 1) !important;
     font-size: inherit;
     font-weight: initial;
-    border: 1px solid #efefef;
     padding: 0 5px;
     border-radius: 5px;
-    background: #9ca3af17;
+    font-family: monospace, source-code-pro, Menlo, Monaco, "Courier New", Courier;
+}
+
+.md .gist {
+    margin-top: 28px;
+    margin-bottom: 14px;
+}
+
+.md pre {
+    background: rgb(242, 242, 242) !important;
+    margin-top: 28px;
+    margin-bottom: 14px;
+    padding: 20px;
 }
 
 .md li img {
@@ -62,4 +75,8 @@
     width: 80px;
     float: left;
     margin: 0 10px 0 0;
+}
+
+.md .line span {
+    color: rgba(41, 41, 41, 1) !important;
 }

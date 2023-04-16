@@ -4,7 +4,7 @@ title: Resumen de la Guía de Scrum
 author: José Albarado
 description: "Scrum es un marco de trabajo liviano que ayuda a las personas, equipos y organizaciones a generar valor a través de soluciones adaptativas para problemas complejos."
 image: 
-  url: "https://media.licdn.com/dms/image/C5612AQEQ6gKYDlQirg/article-cover_image-shrink_600_2000/0/1647877959187?e=1680134400&v=beta&t=DfH0EdE79FHQLIMNlV4GkaEUU_0w91IkbKZPSTwYpP0"
+  url: '/assets/images/scrum.jpg'
   alt: "Earth seen from space."
 pubDate: 2022-03-21
 tags: ["agile", "scrum"]
@@ -122,7 +122,7 @@ Los eventos de Scrum son: **Sprint, Sprint Review, Sprint Retrospective, Sprint 
 
 ### Sprint Planning
 
-- Se empieza fijando el **objetivo del *Sprint*** y se seleccionan los í**tems** para el ***Sprint Backlog****.*
+- Se empieza fijando el **objetivo del *Sprint*** y se seleccionan los ítems para el **Sprint Backlog**.
 - Su **duración en *Sprints* de 1 mes es de máximo 8 horas.**
 
 ### Daily Scrum
@@ -158,5 +158,3 @@ Los *Artefactos de Scrum* representan trabajo o valor y están diseñados para m
 - Se pueden crear múltiples *Increments* dentro de un *Sprint*.
 - Su compromiso es cumplir con la ***Definición de Terminado*** que es la descripción que debe cumplir para considerarse como finalizados.
 - La *Definición de terminado* puede ser un estándar de la organización o puede definirla el equipo
-
-   Solicitar     Editar   Eliminar    
