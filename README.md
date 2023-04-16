@@ -1,18 +1,24 @@
-# Astro Starter Kit: Portfolio
+# Personal blog and portafolio
+---
+[Project Demo Link](https://example.com)
 
-```
-npm create astro@latest -- --template portfolio
-```
+## Description
+---
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/portfolio)
+Welcome to my portfolio, a website that showcases a range of personal projects and shares some interesting posts about technology, development, leadership, learning and growth. This site was built using the **Astro** framework, a static site generator that provides excellent performance and flexibility for building web applications. To ensure a fast and responsive user experience, I used **Tailwind**, a popular CSS framework that offers a wide range of pre-built components and styles.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Thank you for taking the time to explore my portfolio. If you have any questions or are interested in working together, please don't hesitate to get in touch!
 
-![portfolio](https://user-images.githubusercontent.com/4677417/186189473-03dda103-65d3-4220-8b60-180ccaee5939.png)
+## Tech Stack
+---
 
+- Framework: 🚀 [Astro v2.2.3](https://astro.build/)
+- CSS library: [Tailwind v3.1.1](https://astro.build/)
+- Node: [Node v18.11.0](https://astro.build/)
+- Template: [Portafolio](https://stackblitz.com/github/withastro/astro/tree/latest/examples/portfolio)
 
 ## 🧞 Commands
+---
 
 All commands are run from the root of the project, from a terminal:
 
@@ -24,7 +30,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`      | Preview your build locally, before deploying     |
 | `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
