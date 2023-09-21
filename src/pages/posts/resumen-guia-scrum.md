@@ -10,7 +10,7 @@ pubDate: 2022-03-21
 tags: ["agile", "scrum"]
 ---
 
-## Pilares de Scrum
+Pilares de Scrum
 ---
 Los pilares de Scrum son: Transparencia, inspección, adaptación.
 
@@ -31,7 +31,7 @@ Los pilares de Scrum son: Transparencia, inspección, adaptación.
 - Si el proceso se desvía fuera de los límites o el producto es inaceptable. El proceso que se aplica o los materiales que se producen deben ajustarse lo antes posible.
 - Se espera que el Scrum Team se adapte **al momento de aprender algo nuevo a través de la inspección.**
 
-## Valores de Scrum
+Valores de Scrum
 ---
 
 Los valores de Scrum son: **compromiso, enfoque, franqueza, respeto y coraje.**
@@ -42,7 +42,7 @@ Los valores de Scrum son: **compromiso, enfoque, franqueza, respeto y coraje.**
 - Los miembros del *Scrum Team* se **respetan** mutuamente para ser personas capaces e independientes, y son **respetados** como tales por las personas con las que trabajan.
 - Los miembros del *Scrum Team* tienen el **coraje** para hacer lo correcto, para trabajar en problemas complejos.
 
-## Scrum Team
+Scrum Team
 ---
 
 Está conformado por: **Scrum Master, Product Owner, Developer.**
@@ -90,7 +90,7 @@ Responsabilidades:
 - Ayuda a comprender y promulgar un enfoque empírico para el trabajo complejo.
 - Elimina las barreras entre las partes interesadas y el *Scrum Team.*
 
-## Eventos
+Eventos
 ---
 
 Los eventos de Scrum son: **Sprint, Sprint Review, Sprint Retrospective, Sprint Planning, Daily Scrum.**
@@ -132,7 +132,7 @@ Los eventos de Scrum son: **Sprint, Sprint Review, Sprint Retrospective, Sprint 
 - Las *Daily Scrums* mejoran la comunicación, identifican impedimentos, promueven la toma rápida de decisiones y, en consecuencia, eliminan la necesidad de otras reuniones
 - Su duración debe ser de **máximo 15 minutos** y se debe realizar todos los días a la misma hora
 
-## Artefactos
+Artefactos
 ---
 
 Los *Artefactos de Scrum* representan trabajo o valor y están diseñados para maximizar la *Transparencia.*

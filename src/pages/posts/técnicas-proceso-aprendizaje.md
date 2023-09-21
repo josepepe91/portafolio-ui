@@ -10,7 +10,7 @@ pubDate: 2022-03-23
 tags: ["pomodoro","feynman", "cornell"]
 ---
 
-## Repasa
+Repasa
 ---
 
 ¿Te ha pasado que al intentar aprender algo nuevo a los pocos días no recuerdas nada o recuerdas muy poco acerca de tema? La razón es que existe el 90% de probabilidad de olvidar lo estudiado. Repasar el tema varias veces te ayudará a disminuir este porcentaje.
@@ -21,7 +21,7 @@ tags: ["pomodoro","feynman", "cornell"]
 
 La forma en la que aprendemos se puede mejorar con la aplicación de ciertas técnicas. A continuación te presento algunas que mejorarán tu retención de conocimiento.
 
-## Enfócate
+Enfócate
 ---
 
 ¡No! El multitasking no funciona, **enfócate en una sola tarea a la vez**, la terminaras mas pronto y será más provechoso. Elimina cualquier distracción, de preferencia ten un espacio exclusivo para estudiar.
@@ -35,9 +35,7 @@ La Técnica Pomodoro consiste en 4 sencillos pasos:
 - *Paso 3.* Toma un **break de 5 minutos**, aprovecha para comer un snack, estirarte o ver tu celular.
 - *Paso 4.* Repite el paso 2 y 3, cada 4 repeticiones el break será más largo (**15–20 minutos**).
 
-![No hay texto alternativo para esta imagen](https://media.licdn.com/dms/image/C4E12AQHE2FSGAjFZ_g/article-inline_image-shrink_1000_1488/0/1584923342699?e=1683158400&v=beta&t=GNEKQFGb1MZs7T4rSa2c2tf2VUaa2vk2SaWmaegip-8)Para llevar a cabo estos pasos ayúdate de una aplicación (yo uso Pomodoro Timer), también te sirve el temporizador del celular o un temporizador de cocina. Lo importante es cumplir los pasos, enfócate y no te saltes los descansos.
-
-## Toma Apuntes (a mano)
+Toma Apuntes (a mano)
 ---
 
 **Escribir, sintetizar, esquematizar, subrayar y dibujar** implican el uso de nuestra capacidad visual, motora y cognitiva. Esto produce una actividad neural más alta, esto se ve traducido en una mayor retención del conocimiento y a su vez en un incremento de nuestra inteligencia.
@@ -53,8 +51,6 @@ Para empezar a tomar apuntes como Notas de Cornell, debemos esquematizar nuestra
 - *Paso 3.* En la columna derecha apunta las **ideas principales** y lo que el profesor enfatice o repita. Recuerda **resumir al máximo** y escribir en tus propias palabras (**parafrasear**). Puedes usar varios colores, viñetas y dibujos que hagan más fácil la comprensión de tus apuntes.
 - *Paso 4.* En la columna izquierda escribe **preguntas** que te surjan y **palabras clave**.
 - *Paso 5.* En el pie de página anota un pequeño **resumen o la idea principal** del tema que estás aprendiendo.
-
-![No hay texto alternativo para esta imagen](https://media.licdn.com/dms/image/C4E12AQEEWapbltozSg/article-inline_image-shrink_1000_1488/0/1584923436992?e=1683158400&v=beta&t=Nt81NELioibi6KSYWhUEVYivSVHeWZ0GWb3P4c3GDmM)Nota: Debes procurar usar solamente el espacio descrito, sin embargo si te hace falta algún apunte puedes usar notas adhesivas.
 
 ## Aprende en grupo, entiende y enseña
 ---

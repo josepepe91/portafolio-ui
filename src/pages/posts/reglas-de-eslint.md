@@ -10,7 +10,7 @@ pubDate: 2021-04-12
 tags: ["eslint","code-style"]
 ---
 
-## Abstract Syntax Tree (AST)
+Abstract Syntax Tree (AST)
 ---
 
 ¿Se han preguntado cómo hace ESLint para detectar patrones “erróneos” en el código y corregirlos?
